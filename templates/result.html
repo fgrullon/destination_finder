@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+   <div class="jumbotron">
+       <div class="container">
+           <h1>Account</h1>
+           <p>Manage tables and get URLs</p>
+       </div>
+   </div>
+
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+               <h2>Gallery</h2>
+                 {% for arr in arrer %}
+                 <img src="{{ arr }}" class="img-thumbnail">
+                  {% endfor %}
+           </div>
+       </div>
+   </div>
+
+   {% endblock %}
