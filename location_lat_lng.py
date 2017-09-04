@@ -1,4 +1,3 @@
-import urllib2
 import json
 import requests
 
@@ -13,6 +12,6 @@ class location:
     req = requests.get(query, params=params)
     res = req.json()
     lat = res['results'][0]['geometry']['location']['lat']
-    lng = res['results'][0]['geometry']['location']['long']
+    lng = res['results'][0]['geometry']['location']['lng']
     return (lat, lng)
 
