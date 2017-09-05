@@ -5,8 +5,8 @@ import requests
 class get_images:
 
   def get_img(self, lat, lng):
-    client_id = "WBAHTTWXR1GU0KIROJN1RT333EST1Q05TYHQ4XYB14VNO134"
-    client_secret = "OB4UGDBJ5JBTQKFKRKPCFFGSS5Z2EPTUO4POC41LWQYPEIF1"
+    client_id = ""
+    client_secret = ""
     location = "{0},{1}".format(lat, lng)
     api = "https://api.foursquare.com/v2/venues/search?client_id="+client_id+"&client_secret="+client_secret+"&v=20130815&ll=18.48,-69.93"
     ex = "https://api.foursquare.com/v2/venues/explore?ll="+location+"&oauth_token=OWCWXKGK0CR1HSDG40Q4422IWUYB5PQW1YJKITQQJO5EBKE4&v=20170904&radius=250"
