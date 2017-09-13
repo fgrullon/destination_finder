@@ -19,8 +19,9 @@ def home():
 def search_location():
     location_name = request.form.get('destination')
     lat, lng = GL.get_lat_lng(location_name)
-    arr = GI.get_img(lat, lng)
-    return render_template("result.html")
+    arr = GI.get_venue_id(lat, lng)
+    print(arr)
+    return render_template("result.html", arr=arr)
 
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
